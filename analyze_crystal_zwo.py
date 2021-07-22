@@ -1,24 +1,10 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 import os
 import numpy
 import glob
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-
 global fit, xfit, yfit
 
+#Setup
 debug = "no"
 ans = ' '
 in_dir = 'E:\\Crystal Test\\'
@@ -32,7 +18,8 @@ np = 4 # number of polinomials to be removed
 rem_zernike = False     #remove zernike True/False
 nz = 35 # remove zernike polinomial upto 35
 rem_trend=True # remove first order trend
-np = 1 # if the above is set it should set this to 1
+if rem_trend:
+	np = 1 # if the above is set it should set this to 1
 
 #TODO original code is 632.d is this notation just to specify that it should be a float rather than an int
 wave0 = 632.0
