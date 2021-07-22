@@ -73,6 +73,7 @@ for file in files:
     #TODO replaced IDL dindgen with numpy arrange need to test to make sure its working as expected
     wave = numpy.arrange(nspec) * disp + wave0 - nspec * disp / 2
     #TODO need to convert the calcite brief and other functions to python
+	#TODO Could not find quartz_biref file is this not used?
     #case crystal of
 	# 	'calcite': begin
 	# 					mu=calcite_biref(wave0,25.d)
